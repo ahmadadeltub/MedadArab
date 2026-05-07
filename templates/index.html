@@ -1,138 +1,82 @@
-
 {% extends "base.html" %}
 {% block content %}
-
 <!-- Hero Section -->
-<section class="relative min-h-[90vh] flex items-center pt-12 overflow-hidden">
-  <div class="absolute top-0 right-0 -z-10 w-1/2 h-full bg-emerald-50/50 rounded-bl-[100px]"></div>
-  <div class="container mx-auto px-6">
-    <div class="grid lg:grid-cols-2 gap-16 items-center">
-      <div class="space-y-8">
-        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-50 text-emerald-700 text-sm font-bold border border-emerald-100 animate-fade-in">
-          <span class="relative flex h-2 w-2">
-            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-            <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-          </span>
-          مدعوم بالذكاء الاصطناعي
-        </div>
-        <h1 class="text-5xl lg:text-7xl font-extrabold leading-[1.1] text-slate-900">
-          اكتب بجمال،<br/>
-          <span class="text-transparent bg-clip-text bg-gradient-to-l from-emerald-600 to-emerald-400">تعلّم بإتقان</span>
-        </h1>
-        <p class="text-xl text-slate-600 max-w-lg leading-relaxed">
-          اكتشف فن الخط العربي من خلال منصة تفاعلية ذكية تحلل سكتات قلمك وتقدم لك توجيهات فورية لتحسين مهاراتك خطوة بخطوة.
-        </p>
-        <div class="flex flex-wrap gap-4 pt-4">
-          <a href="/practice" class="btn-primary text-white px-10 py-4 rounded-2xl text-lg font-bold">
-            ابدأ رحلتك الآن
-          </a>
-          <a href="#features" class="px-8 py-4 rounded-2xl bg-white text-slate-900 border border-slate-200 hover:bg-slate-50 transition font-bold shadow-sm">
-            استكشف المميزات
-          </a>
-        </div>
-        <div class="flex items-center gap-6 pt-8 border-t border-slate-100">
-          <div class="flex -space-x-3 space-x-reverse">
-            <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200 flex items-center justify-center text-xs font-bold">أ</div>
-            <div class="w-10 h-10 rounded-full border-2 border-white bg-emerald-100 flex items-center justify-center text-xs font-bold text-emerald-700">م</div>
-            <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-300 flex items-center justify-center text-xs font-bold">خ</div>
-          </div>
-          <p class="text-sm text-slate-500 font-medium">انضم إلى أكثر من <span class="text-emerald-600 font-bold">500+</span> طالب ومتدرب</p>
-        </div>
-      </div>
-      <div class="relative group">
-        <div class="absolute -inset-4 bg-emerald-200/30 rounded-[40px] blur-2xl group-hover:bg-emerald-300/40 transition-all"></div>
-        <div class="relative glass rounded-[40px] p-4 shadow-2xl overflow-hidden transform hover:-translate-y-2 transition-transform duration-500">
-          <img src="/static/img/hero.png" alt="مداد الذكي" class="rounded-[30px] w-full h-[500px] object-cover">
-          <div class="absolute bottom-10 right-10 left-10 glass p-6 rounded-2xl border-white/50 shadow-xl">
-            <div class="flex items-center justify-between">
-              <div>
-                <p class="text-sm font-bold text-emerald-600 mb-1">نتيجة التحليل</p>
-                <p class="text-xl font-extrabold text-slate-900">جودة الخط: 94%</p>
-              </div>
-              <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6L9 17l-5-5"></path></svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<section class="py-16 md:py-24 bg-white overflow-hidden">
+  <div class="container mx-auto px-4 text-center max-w-4xl">
+    <div class="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-emerald-50 text-emerald-700 text-sm font-bold border border-emerald-100">
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+      </span>
+      الجيل الجديد من تعليم الخط العربي
     </div>
-  </div>
-</section>
-
-<!-- Stats Section -->
-<section class="py-20 bg-slate-900 text-white overflow-hidden relative">
-  <div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-    <div class="absolute top-10 left-10 w-64 h-64 bg-emerald-500 rounded-full blur-[120px]"></div>
-    <div class="absolute bottom-10 right-10 w-64 h-64 bg-emerald-400 rounded-full blur-[120px]"></div>
-  </div>
-  <div class="container mx-auto px-6 relative z-10">
-    <div class="grid md:grid-cols-4 gap-12 text-center">
-      <div>
-        <div class="text-4xl font-extrabold mb-2 text-emerald-400 font-heading">100%</div>
-        <p class="text-slate-400">تقييم دقيق</p>
-      </div>
-      <div>
-        <div class="text-4xl font-extrabold mb-2 text-emerald-400 font-heading">24/7</div>
-        <p class="text-slate-400">متاح للتدريب</p>
-      </div>
-      <div>
-        <div class="text-4xl font-extrabold mb-2 text-emerald-400 font-heading">AI</div>
-        <p class="text-slate-400">تقنيات متقدمة</p>
-      </div>
-      <div>
-        <div class="text-4xl font-extrabold mb-2 text-emerald-400 font-heading">0.1s</div>
-        <p class="text-slate-400">سرعة التحليل</p>
-      </div>
+    
+    <h1 class="text-4xl md:text-6xl font-black mb-6 text-slate-900 leading-tight font-heading">
+      منصة <span class="text-emerald-600">مداد الذكي</span><br/>
+      لتحسين وتطوير الخط العربي
+    </h1>
+    
+    <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
+      تدرب على الخط العربي باستخدام لوحة ذكية تقوم بتحليل سكتات القلم والزوايا والمسافات باستخدام تقنيات الذكاء الاصطناعي لتقديم توجيهات فورية لك.
+    </p>
+    
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="/practice" class="btn-primary text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg w-full sm:w-auto">
+        ابدأ التدريب الآن
+      </a>
+      <a href="#features" class="px-8 py-4 rounded-xl bg-slate-50 text-slate-700 border border-slate-200 hover:bg-slate-100 transition font-bold w-full sm:w-auto">
+        اكتشف المميزات
+      </a>
     </div>
   </div>
 </section>
 
 <!-- Features Section -->
-<section id="features" class="py-24 bg-white">
-  <div class="container mx-auto px-6 text-center mb-16">
-    <h2 class="text-4xl font-extrabold text-slate-900 mb-4">لماذا مداد الذكي؟</h2>
-    <p class="text-slate-600 max-w-2xl mx-auto">نجمع بين التراث العربي العريق والتكنولوجيا الحديثة لنقدم لك تجربة تعليمية لا مثيل لها.</p>
-  </div>
-  <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
-    <!-- Card 1 -->
-    <div class="p-8 rounded-3xl bg-[#f8fafc] border border-slate-100 hover:border-emerald-200 transition-all hover:shadow-xl group">
-      <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3zM18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5zM2 2l7.586 7.586"></path></svg>
+<section id="features" class="py-16 bg-slate-50 border-t border-slate-200">
+  <div class="container mx-auto px-4 max-w-5xl">
+    <h2 class="text-3xl font-extrabold text-center text-slate-900 mb-12 font-heading">لماذا تختار منصة مداد؟</h2>
+    
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Feature 1 -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+        <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3zM18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5zM2 2l7.586 7.586"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-slate-800">تحليل فوري دقيق</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">يتم تحليل كتابتك في ثوانٍ لاستخراج الأخطاء الشائعة مثل ميل الحروف أو عدم استقرار خط الأساس.</p>
       </div>
-      <h3 class="text-xl font-bold mb-4">لوحة كتابة احترافية</h3>
-      <p class="text-slate-600 leading-relaxed">استمتع بلوحة كتابة تدعم حساسية الضغط مع خطوط إرشادية دقيقة لضبط ميزان الحروف.</p>
-    </div>
-    <!-- Card 2 -->
-    <div class="p-8 rounded-3xl bg-[#f8fafc] border border-slate-100 hover:border-emerald-200 transition-all hover:shadow-xl group">
-      <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+
+      <!-- Feature 2 -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+        <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-slate-800">بيئة تدريب تفاعلية</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">لوحة تدريب تدعم حساسيات الضغط للأقلام الإلكترونية مع إمكانية عرض خطوط إرشادية وتفعيل الحروف المرجعية الشفافة.</p>
       </div>
-      <h3 class="text-xl font-bold mb-4">تحليل فوري وذكي</h3>
-      <p class="text-slate-600 leading-relaxed">يقوم المحرك الذكي بقياس زوايا الميل وسُمك السكتات وتناسق الحروف في أجزاء من الثانية.</p>
-    </div>
-    <!-- Card 3 -->
-    <div class="p-8 rounded-3xl bg-[#f8fafc] border border-slate-100 hover:border-emerald-200 transition-all hover:shadow-xl group">
-      <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+
+      <!-- Feature 3 -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+        <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-slate-800">توجيهات مخصصة</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">نظام الخبير الاصطناعي يوفر لك تغذية راجعة محددة وواضحة تركز على ما يجب عليك تحسينه في المحاولة القادمة.</p>
       </div>
-      <h3 class="text-xl font-bold mb-4">توجيهات مخصصة</h3>
-      <p class="text-slate-600 leading-relaxed">احصل على نصائح عملية بناءً على أدائك الفعلي لتصحيح الأخطاء الشائعة فور وقوعها.</p>
     </div>
   </div>
 </section>
 
 <!-- Call to Action -->
-<section class="py-24 bg-emerald-600 relative overflow-hidden">
-  <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -mr-32 -mt-32"></div>
-  <div class="absolute bottom-0 left-0 w-64 h-64 bg-white/10 rounded-full -ml-32 -mb-32"></div>
-  <div class="container mx-auto px-6 text-center relative z-10">
-    <h2 class="text-4xl font-extrabold text-white mb-8">هل أنت مستعد لتحويل خطك إلى لوحة فنية؟</h2>
-    <p class="text-emerald-50 text-xl mb-12 max-w-2xl mx-auto">ابدأ اليوم مجانًا وانضم إلى مئات الطلاب الذين حسنوا مهاراتهم في الكتابة العربية.</p>
-    <a href="/practice" class="bg-white text-emerald-600 px-12 py-5 rounded-2xl text-xl font-extrabold hover:bg-slate-50 transition shadow-2xl">
-      ابدأ التدريب الآن
-    </a>
+<section class="py-16 bg-white border-t border-slate-200">
+  <div class="container mx-auto px-4 text-center">
+    <div class="bg-slate-900 rounded-3xl p-10 max-w-4xl mx-auto shadow-xl">
+      <h2 class="text-3xl font-extrabold text-white mb-4 font-heading">هل أنت مستعد لتحسين خطك؟</h2>
+      <p class="text-slate-400 mb-8 max-w-xl mx-auto">انضم الآن واستفد من تقنيات الرؤية الحاسوبية المتقدمة لتقييم مهارتك في الخط العربي.</p>
+      <a href="/practice" class="inline-block bg-emerald-500 hover:bg-emerald-400 text-slate-900 px-8 py-3 rounded-lg font-bold transition">
+        الانتقال إلى لوحة التدريب
+      </a>
+    </div>
   </div>
 </section>
-
 {% endblock %}
